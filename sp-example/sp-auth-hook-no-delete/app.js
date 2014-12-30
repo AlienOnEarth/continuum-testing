@@ -3,7 +3,7 @@ var app = express();
 app.use(express.bodyParser());
 
 app.post('/auth', function(req, res) {
-  if (req.body.ClientInfo.ClientUser.match(/6tukfdorxhjdy4b4/g) && req.body.Command.match(/SELECT/i)) {
+  if (req.body.ClientInfo.ClientUser.match(/6tukfdorxhjdy4b4/g) && req.body.Command.match(/DELETE/i)) {
     // reject all drop and select commands
     console.log('Command: '+req.body.Command)
     console.log('DatastoreUser: '+req.body.ClientInfo.DatastoreUser)
