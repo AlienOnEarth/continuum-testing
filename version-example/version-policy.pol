@@ -1,0 +1,6 @@
+on job::/{
+	if(dependency equals runtime.python)
+	{
+		package.lock "package::/sandbox/admin::python-2.7.8"
+	}
+}
