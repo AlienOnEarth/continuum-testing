@@ -22,6 +22,7 @@ try:
 	cur.execute('CREATE TABLE testtable (id INT)')
 	cur.execute('INSERT INTO testtable (id) VALUES (5)')
 	cur.execute('SELECT * from testtable')
+	cur.execute('DELETE from testtable WHERE id=5;')
 	ver = cur.fetchone()
 	print ver	
 

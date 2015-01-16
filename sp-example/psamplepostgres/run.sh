@@ -2,4 +2,4 @@
 
 apt-get update
 apt-get install vim
-apt-get install psycopg2
+pip install psycopg2
